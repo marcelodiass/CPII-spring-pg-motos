@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Prof. Benefrancis do Nascimento"/>
+    <meta name="author" content="Md Irshad Ansari [ lightcode ]"/>
+
+    <title>Suzuki Bike Website</title>
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" th:href="@{~/css/styles.css}">
+
+</head>
+<body>
+
+<section class="main">
+
+    <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
+    <header class="header" id="header">
+
+        <a href="#"><img th:src="@{~/img/logo.png}" class="logo" alt="logo"/></a>
+
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navigation combo">
+            <li>
+
+                <a href="#">Motos</a>
+
+                <ul class="subnav">
+                    <li><a href="#">Hayabusa</a></li>
+                    <li><a href="#">Ninja</a></li>
+                    <li><a href="#">R1000</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Acessorios</a></li>
+            <li><a href="#">Financie</a></li>
+            <li><a href="#">Contato</a></li>
+            <li>
+                <a href="#">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <!--~~~~~~~~~~~~~~~ CONTENT ~~~~~~~~~~~~~~~-->
+    <article>
+
+        <div class="content">
+            <h2>Ready To <span>Race</span></h2>
+            <a href="#" class="btn">Ride Now</a>
+            <img src="img/bike.png" alt="" class="bike"/>
+        </div>
+
+        <!-- Slider Content-->
+        <div class="slider">
+
+            <div class="slides active">
+                <h2><span>Motor</span><br/>1340 cc</h2>
+                <h2><span>Velocidade Máxima</span><br/>260 Km/h</h2>
+            </div>
+            <div class="slides">
+                <h2><span>Transmission</span><br/>6-speed constant mesh</h2>
+                <h2><span>Ignition</span><br/>Electronic ignition</h2>
+            </div>
+
+            <div class="slides">
+                <h2><span>Consumo</span><br/>14 Km/litro</h2>
+                <h2><span>0-100 Km/h</span><br/>4 segundos</h2>
+            </div>
+
+            <div class="slides">
+                <h2><span>Roda</span><br/>17-p Alloy</h2>
+                <h2><span>Tipo do Pneu</span><br/>Tubeless</h2>
+            </div>
+
+            <div class="slides">
+                <h2><span>Bore x Stroke</span><br/>81.0 mm x 65.0 mm</h2>
+                <h2><span>Starter</span><br/>Electric</h2>
+            </div>
+
+        </div>
+    </article>
+
+    <!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
+
+    <footer class="footer" id="footer">
+
+        <ul class="sci">
+
+            <li>
+                <a href="https://www.linkedin.com/in/Benefrancis" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Benefrancis" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <div class="copy">
+            <a href="https://benefrancis.streamlit.app/" target="_blank"> &copy; Copyright Benefrancis All rights
+                reserved</a>
+        </div>
+        <!-- dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+    </footer>
+
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!--~~~~~~~~~~~~~~~ MAIN JS ~~~~~~~~~~~~~~~-->
+<script th:src="@{~/js/main.js}"></script>
+
+</body>
+</html>

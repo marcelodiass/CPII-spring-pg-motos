@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:oracle:${DB_PROD_SERVER:thin:@oracle.fiap.com.br}:${DB_PROD_PORT:1521}:${DB_PROD_NAME:ORCL}
+    username: ${DB_PROD_USERNAME:XX}
+    password: ${DB_PROD_PASSWORD:XX}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    show-sql: true
