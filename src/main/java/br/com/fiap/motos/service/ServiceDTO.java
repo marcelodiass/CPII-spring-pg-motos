@@ -13,13 +13,13 @@ import java.util.Collection;
 public interface ServiceDTO<Entity, Request, Response> {
 
 
-    public Collection<Response> findAll(Example<Entity> example);
+    public Collection<Entity> findAll(Example<Entity> example);
 
 
-    public Response findById(Long id);
+    public Entity findById(Long id);
 
 
-    public Response save(Entity e);
+    public Entity save(Entity e);
 
     /**
      * Transforma o RequestDTO em Entidade
