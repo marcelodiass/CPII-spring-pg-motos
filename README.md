@@ -170,7 +170,7 @@ Lembre-se que:
     6. **(0,25 Ponto)** - **VeiculoService**
 
 
-8. **(5 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resources:
+8. **(4,5 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resources:
 
     1. **(1,25 Pontos)** VeiculoResource com as seguintes ROTAS e VERBOS:
         1. "localhost/veiculos" - **GET by Example**;
