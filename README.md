@@ -133,34 +133,34 @@ atividade.
 
 ## No pacote entity, criar as seguintes classes
 
-1.**(0,5 Pontos)** Na **Veiculo** e adicionar corretamente as anotações JPA.
+2. **(0,5 Pontos)** Na **Veiculo** e adicionar corretamente as anotações JPA.
 
-Lembre-se que:
+   Lembre-se que:
 
     1. Existe relacionamento **Muitos para Um** entre **Veiculo** e **TipoVeiculo** no atributo tipo.
     2. Existe relacionamento **Muitos para Muitos** entre **Veiculo** e **Acessorio** no atributo acessorios.
 
-2. **(0,25 Ponto)** Na **Loja** e adicionar corretamente as anotações JPA.
+
+3. **(0,25 Ponto)** Na **Loja** e adicionar corretamente as anotações JPA.
 
 Lembre-se que:
 
     1. Existe relacionamento **Muitos para Muitos** entre **Loja** e **Veiculo** a no atributo veiculosComercializados.
 
-3. **(0,25 Ponto)** Na **Acessorio** e adicionar corretamente as anotações JPA.
+4. **(0,25 Ponto)** Na **Acessorio** e adicionar corretamente as anotações JPA.
 
 
-4. **(0,25 Ponto)** Na classe **TipoVeiculo** e adicionar corretamente as anotações JPA.
+5. **(0,25 Ponto)** Na classe **TipoVeiculo** e adicionar corretamente as anotações JPA.
    Lembrando-se que é necessário fazer a UK para garantir que não se tenha mais de um Tipo de veículo com o mesmo nome.
 
-5. **(0,5 Ponto)** Na **Caracteristica** e adicionar corretamente as anotações JPA.
+6. **(0,5 Ponto)** Na **Caracteristica** e adicionar corretamente as anotações JPA.
    Lembrando-se que é necessário fazer a UK para garantir que não se tenha mais de uma caracteristica com o mesmo nome
    para um memso veículo.
-
-6. **(0,25 Ponto)** Na **Fabricante** e adicionar corretamente as anotações JPA.
+ 
 
 ## No pacote resources criar as seguintes classes
 
-7. **(1,5 Ponto)**  A criação dos Seguintes Services que devem implementar a ServiceDTO (foi fornecida):
+5. **(1,5 Ponto)**  A criação dos Seguintes Services que devem implementar a ServiceDTO (foi fornecida):
 
     1. **(0,25 Ponto)** - **AcessorioService**
     2. **(0,25 Ponto)** - **CaracteristicaService**
@@ -170,7 +170,7 @@ Lembre-se que:
     6. **(0,25 Ponto)** - **VeiculoService**
 
 
-8. **(4,5 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resources:
+6. **(5 Ponto)**  A perfeita criação dos Seguintes Resources no pacote resources:
 
     1. **(1,25 Pontos)** VeiculoResource com as seguintes ROTAS e VERBOS:
         1. "localhost/veiculos" - **GET by Example**;
@@ -207,9 +207,11 @@ Lembre-se que:
         2. "logalhost/caracteristicas/{id}" - **GET**
 
 
-9. **(2 PONTOS)** - Execução dos Testes com o **POSTMAN**:
-   A dupla deverá criar e executar os testes no POSTMAN para todos os endpoints da aplicação, exportar os testes e
-   colocar na pasta documentação/requisições.
+7. **(2 PONTOS)** - Execução dos Testes com o **POSTMAN**:
+   A dupla deverá criar e executar os testes no POSTMAN para todos os endpoints da aplicação, exportar os testes e colocar na pasta documentação/requisições.
+
+
+
 
 <a id="_Diagrama_de_Classes"></a>
 
@@ -230,7 +232,7 @@ Lembre-se que:
 # Como Entregar
 
 **A entrega deverá ser feita pelo Teams**, você deverá postar o arquivo compactado do projeto. Porém não se esqueça
-de fazer o **commit** e **push** do projeto no github.
+antes de fazer o **commit** e **push** do projeto no github.
 
 **ATENÇÃO**
 **Não será aceito para correção o link para o projeto no github**. O aluno que entregar apenas o link receberá nota *

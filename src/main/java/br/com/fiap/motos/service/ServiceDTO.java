@@ -4,6 +4,7 @@ package br.com.fiap.motos.service;
 import org.springframework.data.domain.Example;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * @param <Entity>    Entity
@@ -13,7 +14,7 @@ import java.util.Collection;
 public interface ServiceDTO<Entity, Request, Response> {
 
 
-    public Collection<Entity> findAll(Example<Entity> example);
+    public List<Entity> findAll(Example<Entity> example);
 
 
     public Entity findById(Long id);
@@ -24,10 +25,10 @@ public interface ServiceDTO<Entity, Request, Response> {
     /**
      * Transforma o RequestDTO em Entidade
      *
-     * @param dto é um DTO de requisição ( RequestDTO )
+     * @param r é um DTO de requisição ( RequestDTO )
      * @return uma Entidade
      */
-    public Entity toEntity(Request dto);
+    public Entity toEntity(Request r);
 
     /**
      * Transforma uma Entidade em um DTO de Resposta (ResponseDTO)

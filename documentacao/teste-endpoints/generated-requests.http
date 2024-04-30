@@ -1,0 +1,152 @@
+###
+GET http://localhost:80/veiculos
+
+###
+GET http://localhost:80/veiculos/{{id}}
+
+###
+GET http://localhost:80/veiculos/{{id}}/acessorios
+
+###
+GET http://localhost:80/loja
+
+###
+GET http://localhost:80/loja/{{id}}
+
+###
+GET http://localhost:80/loja/{{id}}/veiculos
+
+###
+GET http://localhost:80/fabricantes
+
+<> 2024-04-24T143510.200.json
+
+###
+GET http://localhost:80/fabricantes/{{id}}
+
+<> 2024-04-24T143757.200.json
+
+###
+GET http://localhost:80/caracteristicas
+
+###
+GET http://localhost:80/caracteristicas/{{id}}
+
+###
+GET http://localhost:80/tipo-de-veiculo
+
+<> 2024-04-24T143633.200.json
+
+###
+GET http://localhost:80/tipo-de-veiculo/{{id}}
+
+###
+GET http://localhost:80/acessorio
+
+<> 2024-04-24T143637.200.json
+
+###
+GET http://localhost:80/acessorio/{{id}}
+
+<> 2024-04-24T143740.200.json
+
+###
+POST http://localhost:80/veiculos
+Content-Type: application/json
+
+{
+  "tipo": 1,
+  "fabricante": 1,
+  "preco": 30000,
+  "modelo": "GSX-R1000R",
+  "anoDeFabricacao": 2020,
+  "nome": "Suzuki GSX-R1000R",
+  "cor": "Preto",
+  "palavraDeEfeito": "Veloz",
+  "cilindradas": 999
+}
+
+<> 2024-04-24T143646.500.json
+
+
+
+###
+@id = 1
+POST http://localhost:80/loja/{{id}}/veiculos
+Content-Type: application/json
+
+{
+  "tipo": 1,
+  "fabricante": 1,
+  "preco": 50000,
+  "modelo": "GSX-R1000R",
+  "anoDeFabricacao": 2020,
+  "nome": "Suzuki GSX-R1000R",
+  "cor": "Preto",
+  "palavraDeEfeito": "Muito Veloz",
+  "cilindradas": 1200
+}
+
+
+###
+POST http://localhost:80/veiculos/{{id}}/acessorios
+Content-Type: application/json
+
+{
+  "nome": "Escapamento",
+  "preco": 2000
+}
+
+###
+POST http://localhost:80/acessorio
+Content-Type: application/json
+
+{
+  "nome": "Escapamento",
+  "preco": 2000
+}
+
+<> 2024-04-24T143350.201.json
+
+###
+POST http://localhost:80/loja
+Content-Type: application/json
+
+{
+  "nome": "Suzuki"
+}
+
+<> 2024-04-24T143359.500.json
+
+###
+POST http://localhost:80/tipo-de-veiculo
+Content-Type: application/json
+
+{
+  "nome": "Esportiva"
+}
+
+<> 2024-04-24T143123.201.json
+
+###
+POST http://localhost:80/fabricantes
+Content-Type: application/json
+
+{
+  "nome": "Suzuki Motors",
+  "nomeFantasia": "Suzuki"
+}
+
+<> 2024-04-24T142919.201.json
+
+###
+POST http://localhost:80/caracteristicas
+Content-Type: application/json
+
+{
+  "veiculo": 1,
+  "nome": "Suzuki GSX-R1000R",
+  "descricao": "A mais rapida moto!"
+}
+
+<> 2024-04-24T143424.500.json
